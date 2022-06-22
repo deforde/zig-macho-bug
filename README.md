@@ -36,12 +36,15 @@ Test builds:
 
 Zig:
 - zig-linux-x86\_64-0.10.0-dev.2624+d506275a0
+
 Host:
 - x86\_64 Ubuntu 22.04
+
 Clang:
 - Ubuntu clang version 14.0.0-1ubuntu1
 - Target: x86\_64-pc-linux-gnu
 - Thread model: posix
+
 MacOS SDK:
 - MacOSX11.3
 - Available here: https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz
