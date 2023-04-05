@@ -13,10 +13,10 @@ RUN apt update && apt install -y \
 
 WORKDIR /home
 
-RUN curl -LO https://ziglang.org/builds/zig-linux-x86_64-0.10.0-dev.2624+d506275a0.tar.xz && \
-    tar -xf zig-linux-x86_64-0.10.0-dev.2624+d506275a0.tar.xz && \
-    rm zig-linux-x86_64-0.10.0-dev.2624+d506275a0.tar.xz
-ENV PATH=$PATH:/home/zig-linux-x86_64-0.10.0-dev.2624+d506275a0/
+RUN mkdir zig && \
+    curl -L https://ziglang.org/builds/zig-linux-x86_64-0.11.0-dev.2375+771d07268.tar.xz | \
+    tar -xJ --strip-components=1 -C /home/zig
+ENV PATH=$PATH:/home/zig
 
 RUN curl -LO https://github.com/phracker/MacOSX-SDKs/releases/download/11.3/MacOSX11.3.sdk.tar.xz && \
     tar -xf MacOSX11.3.sdk.tar.xz && \

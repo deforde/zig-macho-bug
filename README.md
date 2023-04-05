@@ -1,5 +1,9 @@
 # Zig: Suspected Mach-O Linker Bug Example
 
+Retesting with zig-linux-x86\_64-0.11.0-dev.2375+771d07268 shows that this bug has been resolved.
+
+-------------------------------------------------------------------------------
+
 I believe that there may be a Mach-O linker bug in Zig CC that affects the compilation of dynamic libraries targeting aarch64-macos.
 
 This repo aims to provide a minimal example that reproduces the issue.
@@ -35,7 +39,7 @@ Test builds:
 ## Versions used
 
 Zig:
-- zig-linux-x86\_64-0.10.0-dev.2624+d506275a0
+- zig-linux-x86\_64-0.11.0-dev.2375+771d07268
 
 Host:
 - x86\_64 Ubuntu 22.04
